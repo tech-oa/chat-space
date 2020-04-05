@@ -154,13 +154,15 @@
           width: 100px;
           height: 100%;
           cursor: pointer;
-          
         }
       }
     }
   }
 }
 
+.none{
+  display: none;
+}
 .side-bar {
   width: 300px;
   &__user-name{
