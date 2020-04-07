@@ -5,6 +5,7 @@
 .chat-main {
   height: 100vh;
   width: 100vw;
+
   &__group-info {
     height: 100px;
     text-align: center;
@@ -175,14 +176,14 @@
     color: #eeeeee;
     &__top-box{
       height: 20px;
-      width: 100%;
+      width: 100vh;
       display: flex;
       justify-content: space-between;
       width: 260px;
       $base-color: #ffffff;
       padding-left: 20px;
       padding-right: 20px;
-      &__name{
+      &__user{
         text-align: center;
         align-items: center;
         font-weight: bold;
