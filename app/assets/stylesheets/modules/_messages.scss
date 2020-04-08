@@ -5,6 +5,7 @@
 .chat-main {
   height: 100vh;
   width: 100vw;
+
   &__group-info {
     height: 100px;
     text-align: center;
@@ -165,30 +166,35 @@
 }
 .side-bar {
   width: 300px;
+  float: left;
+  height: 100vh;
   &__user-name{
     $base-background-color: #253141;
     height: 100px;
     text-align: center;
     align-items: center;
     display: flex;
+    justify-content: space-between;
     background-color: $base-background-color;
     color: #eeeeee;
     &__top-box{
       height: 20px;
-      width: 100%;
+      width: 100px;
       display: flex;
       justify-content: space-between;
       width: 260px;
       $base-color: #ffffff;
       padding-left: 20px;
       padding-right: 20px;
-      &__name{
+      width: 300px;
+      &__user{
         text-align: center;
         align-items: center;
         font-weight: bold;
       }
       &__icon{
         width: 60px;
+        color: white;
         color: $base-color;
         &__pen{
           text-decoration: none;
