@@ -215,6 +215,7 @@
     &__box{
       height: 91px;
       background-color: #2f3e51;
+
       &__name{
         font-size: 15px;
         color: #ffffff;
@@ -222,6 +223,7 @@
       &__text{
         font-size: 11px;
         color: #ffffff;
+        text-decoration: none;
       }
     }
   }
