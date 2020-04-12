@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+.wrapper{
+  display: flex;
+}
+
 .chat-main {
   height: 100vh;
   width: 100vw;
@@ -16,6 +20,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: solid 1px #eeeeee;
+
     &__edit{
       width: 72px;
       position: absolute;
@@ -23,6 +28,9 @@
       top: 28px;
       display: flex;
       border: solid 1px #38aef0;
+      height: 40px;
+      align-items: center;
+      
       &__button{
         background-color: $base-background-color;
         color: #38aef0;
@@ -33,18 +41,18 @@
       }
     }
     &__group-name{
-      width: 100px;
+      width: 300px;
       position: absolute;
       top: 35px;
+      left: 4opx;
       font-size: 20px;
       color: #333333;
       text-align: left;
-      font-weight: bold;
     }
     &__member-name{
       color: #999999;
       font-size: 12px;
-      width: 100px;
+      // width: 100px;
       margin-top: 70px;
       text-align: left;
     }
@@ -59,17 +67,30 @@
       color: #333333;
       text-align: left;
       font-weight: bold;
+      position: relative;
+      padding-bottom: 46px;
+      
+      // display: flex;
+      // text-align: center;
       &__date{
+        margin-left: 5px;
         font-size: 12px;
+        height: 15px;
         color: #999999;
         text-align: left;
+        display: inline-block;
+        position: absolute;
+        top: 5px;
+        white-space: nowrap;
       }
-    }
-    &__text{
-      font-size: 14px;
-      color: #434A54;
-      text-align: left;
-      margin-top: 12px;
+      &__text{
+        font-size: 14px;
+        padding-top: 12px;
+        color: #434A54;
+        text-align: left;
+        font-weight: lighter;
+        
+      }
     }
     &__index-second{
       margin-top: 46px;
@@ -83,48 +104,49 @@
         text-align: left;
       }
     }
-    &__text{
-      font-size: 14px;
-      margin-top: 12px;
-      color: #434A54;
-      text-align: left;
-    }
   }
+
   &__message-form{
     height: 90px;
     background-color: #d2d2d2; 
     color: #253141;
     padding: 20px 40px;
     display: flex;
+    justify-content: space-between;
     position: relative;
     &__new-message{
-
     }
-
     &__send{
       display: flex;
-      width: 100px;
-      justify-content: center;
+      width: 200px;
       text-align: center;
       background-color: #38aef0;
       align-items: center;
-      position: absolute;
       top: 20px;
       right: 40px;
       bottom: 20px;
+      position: relative;
       &__button{
         color: #fafafa;
         text-decoration: none;
+        background-color: #38aef0;
+        position: absolute;
+        right: 40px;
+        top: 20px;
+        width: 100px;
+        line-height: 50px;
       }
     }
     &__box{
       background-color: #ffffff;
       text-align: center;
       align-items: center;
-      width: 985px;
+      width: 945px;
       margin-right: 15px;
       display: flex;
       justify-content: center;
+      height: 50px;
+      position: relative;
       &__text{
         color: #999999;
         text-align: left;
@@ -135,29 +157,45 @@
         width: 100%;
         height: 100%;
         line-height: 100%;
+        position: relative;
       }
       &__image{
         // width: 100px;
-        height: 100%;
+        height: 25px;
+        // width: 50px;
+        position: relative;
+        right: 30px;
+        top: 5px;
         justify-content: center;
         background-color: #ffffff;
         display: flex;
         align-items: center;
-        // position: relative;
         &__gazo{
           align-items: center;
           text-decoration: none;
           color: black;
-          position: absolute;
           font-size: 1.3rem;
-          right: 130px;
-          top: 30px;
-          width: 100px;
-          height: 100%;
+          position: absolute;
+          right: 10px;
+          top: 0px;
+          left: 0px;
+          width: 30px;
+          height: 10px;
+          font: 20px;
           cursor: pointer;
+          padding-right: 45px;
+        }
+        &__file{
+          color: white;
+          width: 20px;
+          padding-right: 10px;
+          padding-bottom: 20px;
+          line-height: 25px;
+          display: none;
+
         }
       }
-    }
+    }  
   }
 }
 
