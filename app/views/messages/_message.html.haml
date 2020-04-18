@@ -1,4 +1,3 @@
-
 .chat-main__message-list__index
   = message.user.name
   .chat-main__message-list__index__date
@@ -8,10 +7,18 @@
     - if message.content.present?
       %p.chat-main__message-list__index__text
         = message.content
-    = image_tag message.image.url, class: 'chat-main__message-list__index__text__image' if message.image.present?
+      = image_tag message.image.url, class: 'chat-main__message-list__index__text__image' if message.image.present?
 
     -# - if message.content.present?
 -# .chat-main__message-list__index-second
     
     
-      
+-# <div class="chat-main__message-list__index">
+-# okitsu
+-# <div class="chat-main__message-list__index__date">
+-# 2020年04月11日 17時34分
+-# </div>
+-# <div class="chat-main__message-list__text">
+-# <p class="chat-main__message-list__index__text">
+-# かわいい
+-# </p>
