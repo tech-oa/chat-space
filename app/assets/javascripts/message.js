@@ -49,12 +49,14 @@ $('#new_message').on('submit', function(e){
     var html = buildHTML(data);
     // クラスを自分のクラスに直す
     $('.chat-main__message-list').append(html);
-    $('form')[0].reset();
-    $('.chat-main__message-form__send__button').prop('disabled', false); //ボタンを無効したあと解除する
     $('.chat-main__message-list').animate({ scrollTop: $('.chat-main__message-list')[0].scrollHeight});  
   })
   .fail(function() {
     alert("メッセージ送信に失敗しました");
   });
+  .always(function(){
+    $('.chat-main__message-form__send__button').prop('disabled', false); //ボタンを無効したあと解除する
+    $('form')[0].reset();
+  })
 })
 });
